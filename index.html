@@ -16,6 +16,9 @@
           <img class="logo" src="svg/noemi-logo.svg" alt="logo">
         </a>
         <nav class="nav-menu">
+          <button class="menu-button">
+            <span class="menu-button-label">открыть меню</span>
+          </button>
           <ul class="menu-list">
             <li class="menu-list-item">
               <a href="#0" class="menu-link">главная</a>
@@ -90,11 +93,6 @@
     <div class="wrap-content-sidebar wrap">
       <main class="main-posts">
         <article class="post">
-          <!-- <picture> -->
-            <!-- <source media="(max-width: 640px), (min-width: 1200px)" srcset="картинки/last-post1.jpg"> -->
-            <!-- <source media="(min-width: 641px) and (max-width: 1199px)" srcset="картинки/last-post1.jpg"> -->
-            <!-- <img src="картинки/last-post1.jpg" alt="A young woman doing yoga on the beach" class="article__picture"> -->
-        <!-- </picture> -->
           <img class="post-image" src="картинки/last-post1.jpg">
           <div class="post-desc">
             <ul class="post-tags-list">
@@ -204,46 +202,6 @@
             </p>
           </div>
         </article>
-
-        <!-- <article class="post">
-        <img class="post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt="Склон горы">
-        <div class="post-desc">
-          <ul class="post-tags-list">
-            <li class="post-tag-item"><a href="#0">travel</a>
-            </li>
-            <li class="post-tag-item"><a href="#0">lyfestile</a>
-            </li>
-          </ul>
-          <h2 class="post-title "><a href="#0">Как первый раз отправиться в горы?</a></h2>
-          <div class="wrap-date-author">
-            <time class="date">10 июня 2019</time>
-            <address class="author">Неизвестный автор</address>
-          </div>
-          <p class="post-lead">
-            Для начала нужно определиться, в каком формате пройдёт ваше путешествие. Это зависит от многих факторов, не только от ваших желаний и интересов.
-          </p>
-        </div>
-      </article> -->
-
-        <!-- <article class="post">
-        <img class="post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="Накрытая на стол еда">
-        <div class="post-desc">
-          <ul class="post-tags-list">
-            <li class="post-tag-item"><a href="#0">lifestyle</a>
-            </li>
-            <li class="post-tag-item"><a href="#0">food</a>
-            </li>
-          </ul>
-          <h2 class="post-title "><a href="#0">Наукоёмкий подход к кулинарии</a></h2>
-          <div class="wrap-date-author">
-            <time class="date">10 июня 2019</time>
-            <address class="author">Неизвестный автор</address>
-          </div>
-          <p class="post-lead">
-            Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.
-          </p>
-        </div>
-      </article> -->
       </main>
       <aside class="sidebare">
         <section class="sidebare-section-posts">
@@ -392,8 +350,18 @@
       <h2 class="section-title">Наши изделия</h2>
       <div class="shop-products">
         <div class="product">
-          <img class="product-image" src="картинки/shop-item-desk1.jpg"
-            alt="Розовая дизайнерская подушка">
+          <picture>
+            <source class="product-image"
+              media="(max-width: 640px), (max-height: 450px)"
+              srcset="картинки/shop-item-mobile1.jpg">
+            <source class="product-image"
+              media="(min-width: 641px) and (max-width: 1199px) and (min-height: 451px)"
+              srcset="картинки/shop-item-tablet1.jpg">
+            <source class="product-image" media="(min-width: 1200px)"
+              srcset="картинки/shop-item-desk1.jpg">
+            <img class="product-image" src="картинки/shop-item-desk1.jpg"
+              alt="Розовая дизайнерская подушка">
+          </picture>
           <div class="product-desc">
             <h2 class="product-title">подушки на диван</h2>
             <p class="product-lead">
@@ -415,8 +383,18 @@
         </div>
 
         <div class="product">
-          <img class="product-image" src="картинки/shop-item-desk2.jpg"
-            alt="Кукла-зайчик ручной работы">
+          <picture>
+            <source class="product-image"
+              media="(max-width: 640px), (max-height: 450px)"
+              srcset="картинки/shop-item-mobile2.jpg">
+            <source class="product-image"
+              media="(min-width: 641px) and (max-width: 1199px) and (min-height: 451px)"
+              srcset="картинки/shop-item-tablet2.jpg">
+            <source class="product-image" media="(min-width: 1200px)"
+              srcset="картинки/shop-item-desk3.jpg">
+            <img class="product-image" src="картинки/shop-item-desk2.jpg"
+              alt="Кукла-зайчик ручной работы">
+          </picture>
           <div class="product-desc">
             <h2 class="product-title">Кукла «Зайчик»</h2>
             <p class="product-lead">
@@ -438,8 +416,18 @@
         </div>
 
         <div class="product">
-          <img class="product-image" src="картинки/shop-item-desk3.jpg"
-            alt="Шесиугольная рамка и белая ваза с цветами">
+          <picture>
+            <source class="product-image"
+              media="(max-width: 640px), (max-height: 450px)"
+              srcset="картинки/shop-item-mobile3.jpg">
+            <source class="product-image"
+              media="(min-width: 641px) and (max-width: 1199px) and (min-height: 451px)"
+              srcset="картинки/shop-item-tablet3.jpg">
+            <source class="product-image" media="(min-width: 1200px)"
+              srcset="картинки/shop-item-desk3.jpg">
+            <img class="product-image" src="картинки/shop-item-desk3.jpg"
+              alt="Шесиугольная рамка и белая ваза с цветами">
+          </picture>
           <div class="product-desc">
             <h2 class="product-title">Шестиугольная рамка</h2>
             <p class="product-lead">
@@ -484,11 +472,9 @@
       <div class="copyright">Copyright © 2009–2019 City Blog LLC.</div>
     </footer>
 
-    <div class="veil">
+    <div class="cover">
       <div class="popup">
-        <!-- <div class="section__title-position popup_title"> -->
-          <h3 class="section-title">Ваш фидбек</h3>
-        <!-- </div> -->
+        <h3 class="section-title">Ваш фидбек</h3>
         <form action="#" class="feedback">
           <svg class="popup_close" xmlns="http://www.w3.org/2000/svg"
             fill="none" viewBox="0 0 441 441">
@@ -497,10 +483,10 @@
           </svg>
           <div class="popup-transform">
             <div class="feedback-section-select">
-              <label for="feedback__select" class="select-label">Как часто вы
+              <label for="feedback-select" class="select-label">Как часто вы
                 заходите на сайт?</label>
-              <select class="input-style feedback__select"
-                name="feedback__select" id="feedback__select">
+              <select class="input-style feedback-select"
+                name="feedback-select" id="feedback-select">
                 <option value="1" class="select-option" selected>Почти каждый
                   день</option>
                 <option value="2" class="select-option">Раз в несколько дней</option>
@@ -510,32 +496,29 @@
             </div>
             <div class="feedback-section-radio">
               <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
-              <label class="feedback__radio-group">
-                <input type="radio" class="feedback__radio" name="radio-group">
-                <span class="feedback__radio-text">Да</span>
+              <label class="feedback-radio-group">
+                <input type="radio" class="feedback-radio" name="radio-group">
+                <span class="feedback-radio-text">Да</span>
               </label>
-              <label class="feedback__radio-group">
-                <input type="radio" class="feedback__radio" name="radio-group">
-                <span class="feedback__radio-text">Нет</span>
-              </label>         
+              <label class="feedback-radio-group">
+                <input type="radio" class="feedback-radio" name="radio-group">
+                <span class="feedback-radio-text">Нет</span>
+              </label>
             </div>
             <div class="feedback-section-textarea">
-              <label class="form-hint" for="feedback__textarea">Расскажите,
+              <label class="form-hint" for="feedback-textarea">Расскажите,
                 какой контент вы хотели бы видеть на нашем сайте?</label>
-              <textarea class="input-style feedback__textarea"
-                id="feedback__textarea" placeholder="Может, больше рецептов?"
+              <textarea class="input-style feedback-textarea"
+                id="feedback-textarea" placeholder="Может, больше рецептов?"
                 required></textarea>
             </div>
-          
-          <span class="form-hint alert">Пожалуйста, заполните все поля формы!</span>
-          <!-- <label class="send-button-label" for="send-button">
-            <span class="visual-hidden">press this button to send your
-              feedback</span>
-          </label> -->
-          <button id="send-button" type="button" class="send-button btn_style button-subscribe">Отправить</button>
-        </form>
-      </div>
-    </div>
-  </body>
 
-</html>
+            <span class="form-hint alert">Пожалуйста, заполните все поля формы!</span>
+            <button id="send-button" type="button"
+              class="send-button btn_style button-subscribe">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </body>
+
+  </html>
