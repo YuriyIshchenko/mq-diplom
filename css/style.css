@@ -1,16 +1,20 @@
-  @font-face {
-    font-family: "Open Sans";
-    font-weight: normal;
-    font-style: normal;
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff) format("truetype");
-  }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../шрифты/OpenSans-Regular.woff2") format("woff2"),
+      url("../шрифты/OpenSans-Regular.woff") format("woff"),
+      url("../шрифты/OpenSans-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: "Open Sans";
-    font-weight: bold;
-    font-style: normal;
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff) format("truetype");
-  }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../шрифты/OpenSans-Bold.woff2") format("woff2"),
+      url("../шрифты/OpenSans-Bold.woff") format("woff"),
+      url("../шрифты/OpenSans-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
 
   body {
     font-family: "Open Sans", sans-serif;
@@ -52,15 +56,15 @@
   .header {
     position: relative;
     box-sizing: border-box;
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+    background-image: url("../картинки/banner-bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     max-width: 1660rem;
     min-height: 450rem;
     z-index: 10;
-    padding-top: 54rem;
-    margin: 0 auto 54rem auto;
+    padding-top: 27rem;
+    margin: 0 auto 58rem auto;
   }
 
   .header::after {
@@ -101,6 +105,7 @@
     display: flex;
     box-sizing: border-box;
     margin-top: 0rem;
+    align-items: center;
   }
 
 
@@ -134,7 +139,7 @@
     width: 730rem;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 126rem;
+    padding-bottom: 60rem;
     z-index: 10;
   }
 
@@ -213,6 +218,7 @@
   .trend-content {
     border: 3rem solid #b59f5b;
     padding: 34rem 33rem;
+    flex-grow: 1;
   }
 
   .trend-title {
@@ -329,8 +335,6 @@
     text-transform: uppercase;
     margin: 0px;
     line-height: 1;
-    padding-left: 4px;
-    padding-top: 1px;
   }
 
   .sidebare-section-name::after {
@@ -346,7 +350,6 @@
   .sidebare-post {
     position: relative;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 22px;
   }
 
@@ -362,7 +365,7 @@
   }
 
   .sidebar-post-content {
-    width: 182px;
+    margin-left: 19px;
   }
 
   .sidebar-post-name {
@@ -380,11 +383,9 @@
 
   .sidebare-post-date {
     margin-bottom: 0px;
-    width: 182px;
     margin: 0;
     box-sizing: content-box;
     display: block;
-    margin-right: 9px;
     margin-top: -6px;
     font-size: 12px;
     color: #888888;
@@ -414,7 +415,7 @@
     padding-right: 2px;
     border: none;
     background-color: #f4f7f6;
-    width: 222px;
+    flex: auto;
     outline: none;
   }
 
@@ -468,7 +469,7 @@
   .button-subscribe {
     border: none;
     background-color: #b59f5b;
-    width: 270px;
+    width: 100%;
     height: 48px;
     padding: 19px auto;
     text-transform: uppercase;
@@ -620,7 +621,6 @@
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    /* display: block; */
   }
 
   .product-price {
@@ -692,7 +692,10 @@
     color: #999;
   }
 
-  .cover {
+  .veil {
+    display: flex;
+    /* display: none; */
+    justify-content: center;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -700,10 +703,7 @@
     top: 0;
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.6);
-    /*display: flex;*/
-    justify-content: center;
     z-index: 100;
-    display: none;
   }
 
   .popup {
@@ -772,7 +772,6 @@
   span.alert {
     display: none;
     margin-top: 20rem;
-    /* color: red; */
   }
 
   .feedback-section-radio {
@@ -806,7 +805,6 @@
     width: 100%;
     height: 130rem;
     resize: none;
-    /*font-family: inherit;*/
     font-size: inherit;
     padding: 20rem 22rem;
   }
@@ -815,8 +813,6 @@
     width: 100%;
     margin-top: -2rem;
     margin-bottom: 20rem;
-    /* outline: 2rem solid #323232; */
-    /* outline-offset: -2rem; */
   }
 
 
@@ -831,8 +827,6 @@
   }
 
 
-
-
   @media (min-width: 1200px) {
     .trend-item:nth-child(n+2) {
       margin-left: 4rem;
@@ -844,16 +838,10 @@
   }
 
 
-
-  @media (min-width: 641px) and (max-width: 1199px) {
-    html {
-      font-size: 0.8711px;
-    }
-
+  @media (max-width: 1199px) {
     .menu-list {
       display: none;
     }
-
 
     .menu-button {
       width: 24rem;
@@ -869,8 +857,6 @@
     .menu-button:hover {
       opacity: 0.8;
     }
-
-
 
     .menu-button::before,
     .menu-button::after {
@@ -903,26 +889,74 @@
       transition: 0.5s;
     }
 
+    .main-posts {
+      width: 100%;
+
+    }
+
+    .post {
+      display: flex;
+      margin-bottom: 40px;
+      padding-bottom: 9px;
+      flex-wrap: wrap;
+      border-bottom: 3px solid #888888;
+    }
+
+    .post:last-child {
+      border-bottom: none;
+    }
+
+    .post-image {
+      display: flex;
+      width: 100%;
+      margin-bottom: 17px;
+    }
+
+    .post-desc {
+      margin: 0;
+    }
+
+    .wrap-date-author {
+      position: relative;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 26px;
+
+    }
+  }
+
+
+  @media (min-width: 641px) and (max-width: 1199px) {
+    html {
+      font-size: 0.8888px;
+    }
+    
+    .header {
+      min-height: 392px;
+      background-image: url("../картинки/banner-bg-tablet.jpg");
+      padding-top: 43px;
+      margin-bottom: 41px;
+    }
+
     .page-title {
       line-height: 64rem;
     }
 
     .trends {
-      margin-bottom: 47px;
+      margin-bottom: 46px;
     }
+
     .trends-items {
       display: flex;
       flex-wrap: wrap;
     }
-
-
 
     .trend-item {
       width: calc(100%/3);
       min-height: 246px;
 
       flex-grow: 1;
-      margin-bottom: 3px;
+      margin-bottom: 4px;
       box-sizing: border-box;
     }
 
@@ -930,56 +964,41 @@
       margin-left: 4rem;
     }
 
-    .main-posts {
-      width: 100%;
-
+    .wrap-content-sidebar {
+      justify-content: space-evenly;
     }
-
-
-
-    .post {
-      display: flex;
-      margin-bottom: 60rem;
-      flex-wrap: wrap;
-    }
-
-    .post-image {
-      display: flex;
-      width: 100%;
-      margin-bottom: 12px;
-    }
-
-    .post-desc {
-      /*   display: block; */
-      /*   flex-direction: column; */
-      /* width: 100%; */
-      margin: 0;
-      /* min-height: 390px; */
-      /* margin-left: 35px; */
-      /* margin-right: 35px; */
-    }
-
 
     .wrap {
-      padding: 0 4.8vw;
+      padding: 0 4.6vw;
     }
 
+    .main-posts {
+      max-width: 393px;
+    }
+
+    .post-title {
+      font-size: 19rem;
+    }
     .sidebare {
-      margin-left: 4.8vw;
+      margin-left: 4.5vw;
     }
 
+    .shop {
+      margin-bottom: 20px;
+    }
 
     .shop-products {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin-top: 34px;
     }
 
     .product {
       display: flex;
       flex-direction: column;
       width: 48.1%;
-      margin-bottom: 28px;
+      margin-bottom: 31px;
     }
 
     .product-image {
@@ -987,7 +1006,93 @@
       width: calc(100% - 46px);
     }
 
-
-
+    .copyright {
+      margin-top: 50px;
+    }
 
   }
+
+
+  @media (max-width: 640px) {
+
+    html {
+      font-size: 0.8px;
+    }   
+
+    .header {
+      min-height: 640px;
+      margin-bottom: 40px;
+      padding-top: 33px;
+      background-image: url("../картинки/banner-mobile.jpg");
+    }
+
+     .wrap {
+      padding: 0 16px;   
+     }
+
+    .header-bar {
+      flex-direction: column-reverse;
+      /* justify-content: unset; */
+      align-items: center;
+      margin-bottom: 41rem;
+    }
+
+    .menu-button {
+      width: 28rem;
+      height: 19px;
+      
+    }
+
+    .logo{
+    width: 71vw;
+    margin: 0 auto;
+    padding: 0;
+    }
+
+    .nav-menu {
+      margin: 0 0 174px auto;
+    }
+
+    .page-title {
+      width: 90%;
+      font-size: 26px;
+      line-height: 36px;
+      padding: 0;
+    }
+
+    .trends {
+      margin-bottom: 40px;
+    }
+
+    .trends-items {
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+    }
+    .trend-item {
+      width: 100vw;
+      min-height: 207px;
+      flex-wrap: wrap;
+      /* flex-grow: 1; */
+      margin-bottom: 3px;
+      /* box-sizing: border-box; */
+    }
+
+    .wrap-content-sidebar {
+      flex-wrap: wrap;
+      max-width: 360px;
+    }
+
+    .shop-products {
+      flex-wrap: wrap;
+    }
+
+    .sidebare {
+      width: 100%;
+
+    }
+  }
+
+
+
+
+
