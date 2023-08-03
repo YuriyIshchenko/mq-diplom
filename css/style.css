@@ -1010,6 +1010,18 @@
       margin-top: 50px;
     }
 
+
+    .popup {
+      position: relative;
+      max-width: 390px;
+      max-height: 800rem;
+      box-sizing: border-box;
+      border: 1rem solid #e2e2e2;
+      margin: auto;
+      padding: 50rem 28rem 30rem;
+
+    }
+
   }
 
 
@@ -1060,8 +1072,12 @@
       padding: 0;
     }
 
+    .section-title::after {
+      width: 80rem;
+      margin-bottom: 31rem;
+    }
     .trends {
-      margin-bottom: 40px;
+      margin-bottom: 41px;
     }
 
     .trends-items {
@@ -1077,6 +1093,60 @@
       /* box-sizing: border-box; */
     }
 
+
+ 
+    .post-title {
+        margin-top: 12rem;
+    }
+
+
+
+    .wrap-date-author {
+      margin-top: 15px;
+      margin-bottom: 12px;
+    }
+
+    .post-lead {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 6px;
+    }
+
+    .main-posts {
+      margin-bottom: 9px;
+    }
+
+    .post {
+      margin-bottom: 37px;
+      padding-bottom: 14px;
+    }
+  
+    .post-image {
+      margin-bottom: 15px;
+    }
+
+    .sidebare-section-name {
+      font-size: 16px;
+    }
+
+    
+
+    .sidebare-section-posts {
+      padding-bottom: 42px;
+    }
+
+    .sidebare-section-subscribe {
+      padding-bottom: 42px;
+    }
+
+    .sidebare-section-tags {
+      margin-bottom: 5px;
+    }
+
+    .sidebare-section-themes {
+      margin-bottom: 47px;
+    }
+
     .wrap-content-sidebar {
       flex-wrap: wrap;
       max-width: 360px;
@@ -1084,11 +1154,27 @@
 
     .shop-products {
       flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .product {
+      margin-bottom: 30px;
+  }
+
+    .product-title {
+      font-size: 21rem;
+    }
+
+    .shop {
+      margin-bottom: 15px;
+    }
+
+    .copyright {
+      margin-top: 47px;
     }
 
     .sidebare {
       width: 100%;
-
     }
   }
 
