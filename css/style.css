@@ -58,7 +58,6 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  max-width: 1660rem;
   min-height: 450rem;
   z-index: 10;
   padding-top: 27rem;
@@ -164,7 +163,7 @@ html {
 
 .trends-items {
   display: flex;
-  max-width: 1660rem;
+  /* max-width: 1660rem; */
   margin: auto;
   justify-content: space-between;
 }
@@ -173,7 +172,7 @@ html {
   position: relative;
   display: flex;
   align-items: end;
-  width: calc(1648rem/4);
+  width: calc(100%/4);
   min-height: 290rem;
   background-size: cover;
   padding: 15rem 24rem 15rem 20rem;
@@ -678,9 +677,12 @@ html {
   color: #999;
 }
 
-.veil {
-  /* display: flex; */
+.popup-hidden {
   display: none;
+}
+
+.veil {
+  display: flex;
   justify-content: center;
   position: fixed;
   height: 100%;
